@@ -30,6 +30,23 @@ func stringToFloat(s string) (float64, error) {
 	return vInt, nil
 }
 
+func getAQICategory(aqi int) (string, string) {
+	switch {
+	case aqi <= 50:
+		return "🟢", "Good"
+	case aqi <= 100:
+		return "🟡", "Moderate"
+	case aqi <= 150:
+		return "🟠", "Unhealthy for Sensitive Groups"
+	case aqi <= 200:
+		return "🔴", "Unhealthy"
+	case aqi <= 300:
+		return "🟣", "Very Unhealthy"
+	default:
+		return "🟤", "Hazardous"
+	}
+}
+
 func checkAqi(latitude, longitude float64) (string, error) {
 	apiKey := os.Getenv("WAQI_API_KEY")
 	if apiKey == "" {
@@ -48,7 +65,8 @@ func checkAqi(latitude, longitude float64) (string, error) {
 		return "", fmt.Errorf("WAQI API returned error status: %s", waqiResp.Status)
 	}
 
-	return fmt.Sprintf("AQI: %d", waqiResp.Data.AQI), nil
+	emoji, category := getAQICategory(waqiResp.Data.AQI)
+	return fmt.Sprintf("%s AQI: %d (%s)", emoji, waqiResp.Data.AQI, category), nil
 }
 
 func parseCoordinates() (float64, float64, error) {
