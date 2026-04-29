@@ -35,7 +35,7 @@ jobs:
             type=raw,value={{sha}}
             type=raw,value=latest
       - name: Build and tag image
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           builder: ${{ steps.buildx.outputs.name }}
