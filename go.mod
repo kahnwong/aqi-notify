@@ -1,6 +1,6 @@
 module github.com/kahnwong/aqi-notify
 
-go 1.26.3
+go 1.27.0
 
 require github.com/joho/godotenv v1.5.1
 
