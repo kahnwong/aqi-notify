@@ -2,6 +2,8 @@ github.com/carlmjohnson/requests v0.25.1 h1:17zNRLecxtAjhtdEIV+F+wrYfe+AGZUjWJtp
 github.com/carlmjohnson/requests v0.25.1/go.mod h1:z3UEf8IE4sZxZ78spW6/tLdqBkfCu1Fn4RaYMnZ8SRM=
 github.com/carlmjohnson/requests v0.26.1 h1:kFt5j1XsynNKoladW2qJdP9S+UdigvGLW+53DXbN5F4=
 github.com/carlmjohnson/requests v0.26.1/go.mod h1:qMGUsG9/8MbvYRMGwvMBVSQQmRswVcVMAzexVyy038g=
+github.com/carlmjohnson/requests v0.26.2 h1:1pjcAh+xSBuHqR/UmVc63X3vrZMEUsNCrhTglQULTKQ=
+github.com/carlmjohnson/requests v0.26.2/go.mod h1:qMGUsG9/8MbvYRMGwvMBVSQQmRswVcVMAzexVyy038g=
 github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
 github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
 github.com/mattn/go-colorable v0.1.14 h1:9A9LHSqF/7dyVVX6g0U9cwm9pG3kP9gSzcuIPHPsaIE=
